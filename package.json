@@ -1,0 +1,48 @@
+{
+  "name": "vue-cli-plugin-vue-types",
+  "version": "1.0.0",
+  "description": "Vue CLI plugin to install and setup vue-types",
+  "author": "Marco Solazzi",
+  "license": "MIT",
+  "homepage": "https://github.com/dwightjack/vue-cli-plugin-vue-types",
+  "main": "index.js",
+  "files": [
+    "*.js"
+  ],
+  "engines": {
+    "node": ">=8.9.0"
+  },
+  "scripts": {
+    "prepublishOnly": "npm run build",
+    "build": "npm run lint && npm run test",
+    "lint": "eslint *.js test/*.js",
+    "test": "jest"
+  },
+  "keywords": [
+    "vue",
+    "vue-types",
+    "vue-cli"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dwightjack/vue-cli-plugin-vue-types.git"
+  },
+  "bugs": "https://github.com/dwightjack/vue-cli-plugin-vue-types/issues",
+  "devDependencies": {
+    "eslint": "^5.10.0",
+    "eslint-config-prettier": "^3.3.0",
+    "eslint-plugin-node": "^8.0.0",
+    "eslint-plugin-prettier": "^3.0.0",
+    "jest": "^23.6.0",
+    "prettier": "^1.15.3"
+  },
+  "jest": {
+    "verbose": true,
+    "bail": false,
+    "collectCoverage": false,
+    "testEnvironment": "node",
+    "testMatch": [
+      "**/*.test.js"
+    ]
+  }
+}
